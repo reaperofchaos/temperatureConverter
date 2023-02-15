@@ -44,6 +44,7 @@
 		30FE454A299C878A00B3798D = {
 			isa = PBXGroup;
 			children = (
+				30FE4570299C9ED500B3798D /* README.md */,
 				30FE4555299C878A00B3798D /* FahrenheitConverter */,
 				30FE4554299C878A00B3798D /* Products */,
 			);
@@ -66,7 +67,6 @@
 				30FE455A299C878B00B3798D /* Assets.xcassets */,
 				30FE455C299C878B00B3798D /* FahrenheitConverter.entitlements */,
 				30FE455D299C878B00B3798D /* Preview Content */,
-				30FE4570299C9ED500B3798D /* README.md */,
 			);
 			path = FahrenheitConverter;
 			sourceTree = "<group>";
