@@ -11,6 +11,8 @@
 		30FE4559299C878A00B3798D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE4558299C878A00B3798D /* ContentView.swift */; };
 		30FE455B299C878B00B3798D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FE455A299C878B00B3798D /* Assets.xcassets */; };
 		30FE455F299C878B00B3798D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FE455E299C878B00B3798D /* Preview Assets.xcassets */; };
+		30FE456C299C87D600B3798D /* FahrenheitConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30FE456A299C87D600B3798D /* FahrenheitConverter.cpp */; };
+		30FE456F299C8A6900B3798D /* FahrenheitConverterWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30FE456E299C8A6900B3798D /* FahrenheitConverterWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,11 @@
 		30FE455A299C878B00B3798D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30FE455C299C878B00B3798D /* FahrenheitConverter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FahrenheitConverter.entitlements; sourceTree = "<group>"; };
 		30FE455E299C878B00B3798D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30FE4569299C87D500B3798D /* FahrenheitConverter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FahrenheitConverter-Bridging-Header.h"; sourceTree = "<group>"; };
+		30FE456A299C87D600B3798D /* FahrenheitConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FahrenheitConverter.cpp; sourceTree = "<group>"; };
+		30FE456B299C87D600B3798D /* FahrenheitConverter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FahrenheitConverter.hpp; sourceTree = "<group>"; };
+		30FE456D299C8A0700B3798D /* FahrenheitConverterWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FahrenheitConverterWrapper.h; sourceTree = "<group>"; };
+		30FE456E299C8A6900B3798D /* FahrenheitConverterWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FahrenheitConverterWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 		30FE4555299C878A00B3798D /* FahrenheitConverter */ = {
 			isa = PBXGroup;
 			children = (
+				30FE4566299C87A500B3798D /* Helpers */,
 				30FE4556299C878A00B3798D /* FahrenheitConverterApp.swift */,
 				30FE4558299C878A00B3798D /* ContentView.swift */,
 				30FE455A299C878B00B3798D /* Assets.xcassets */,
@@ -67,6 +75,34 @@
 				30FE455E299C878B00B3798D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30FE4566299C87A500B3798D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				30FE4568299C87B600B3798D /* ObjC */,
+				30FE4567299C87AF00B3798D /* CPP */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		30FE4567299C87AF00B3798D /* CPP */ = {
+			isa = PBXGroup;
+			children = (
+				30FE456A299C87D600B3798D /* FahrenheitConverter.cpp */,
+				30FE456B299C87D600B3798D /* FahrenheitConverter.hpp */,
+				30FE4569299C87D500B3798D /* FahrenheitConverter-Bridging-Header.h */,
+			);
+			path = CPP;
+			sourceTree = "<group>";
+		};
+		30FE4568299C87B600B3798D /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				30FE456D299C8A0700B3798D /* FahrenheitConverterWrapper.h */,
+				30FE456E299C8A6900B3798D /* FahrenheitConverterWrapper.mm */,
+			);
+			path = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +137,7 @@
 				TargetAttributes = {
 					30FE4552299C878A00B3798D = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -141,6 +178,8 @@
 			files = (
 				30FE4559299C878A00B3798D /* ContentView.swift in Sources */,
 				30FE4557299C878A00B3798D /* FahrenheitConverterApp.swift in Sources */,
+				30FE456F299C8A6900B3798D /* FahrenheitConverterWrapper.mm in Sources */,
+				30FE456C299C87D600B3798D /* FahrenheitConverter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FahrenheitConverter/FahrenheitConverter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -287,6 +327,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FahrenheitConverter/Helpers/CPP/FahrenheitConverter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FahrenheitConverter/FahrenheitConverter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -323,6 +366,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FahrenheitConverter/Helpers/CPP/FahrenheitConverter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
