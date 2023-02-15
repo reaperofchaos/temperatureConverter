@@ -27,6 +27,7 @@
 		30FE456B299C87D600B3798D /* FahrenheitConverter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FahrenheitConverter.hpp; sourceTree = "<group>"; };
 		30FE456D299C8A0700B3798D /* FahrenheitConverterWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FahrenheitConverterWrapper.h; sourceTree = "<group>"; };
 		30FE456E299C8A6900B3798D /* FahrenheitConverterWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FahrenheitConverterWrapper.mm; sourceTree = "<group>"; };
+		30FE4570299C9ED500B3798D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 				30FE455A299C878B00B3798D /* Assets.xcassets */,
 				30FE455C299C878B00B3798D /* FahrenheitConverter.entitlements */,
 				30FE455D299C878B00B3798D /* Preview Content */,
+				30FE4570299C9ED500B3798D /* README.md */,
 			);
 			path = FahrenheitConverter;
 			sourceTree = "<group>";
